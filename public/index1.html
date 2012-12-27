@@ -1,0 +1,44 @@
+<html><head><title>CNTweeter</title>
+<link rel="shortcut icon" href="images/favicon.png">
+<meta itemprop="image" content="images/favicon.png">
+<script type=text/javascript>
+function login_click()
+{
+	var keyval=window.event.keyCode;
+	var login_val = document.getElementById("login_fld").value;
+	var password_val=document.getElementById("password_fld").value;
+	if((login_val=='' || password_val=='') && (keyval==13 || keyval==0))
+	{
+		alert("Login and Password fields should not be empty!!");
+		return;
+	}
+	if(keyval==13 || keyval==0)
+		alert("Tried to Login with,\nLogin: "+login_val+"\nPassword: "+password_val);
+}
+</script>
+</head>
+<body><pre>
+<form><p>
+<a href='https://app.cloudforge.com'><img src='images/main-logo-white.png' align=right></a>
+<img src='images/tweeter_bigger1.jpg' align=left>
+<h1>
+<font color=#81ABE5>	Welcome to CNTweeter!<br><img src='images/tweeter_logo_long.jpg' align=right>
+       Get Ready for the Magic!</font></h1><br>
+</p><img src='images/tweeter_logo.jpg' align=right>
+<h3>	Login	  <input id='login_fld' name='login_fld' autofocus='autofocus' required=required placeholder='Login' type=text /><br>
+	Password  <input id='password_fld' name='password_fld' required=required type=password placeholder='Password' onkeypress="return login_click()" / ><br>
+
+			       <button type=button color=#81ABE5 style='background-color:#81ABE5' onclick='login_click()'><h4>Login</h4></button>
+
+	    <a href=''>Forgot Password</a>  <a href=''>SignUp</a>
+
+
+
+
+</h3><font color=#81ABE5><h1>    CNTweeter</h1></font>
+</form></pre>
+<footer><center>
+Powered by <a href='https://app.cloudforge.com'>CloudForge</a><br>
+Copyright (C) <a href='https://collab.net'>CollabNet Software Pvt Ltd</a></center></footer>
+</body>
+</html>
