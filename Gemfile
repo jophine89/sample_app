@@ -35,6 +35,7 @@ group :development, :test do
   gem 'mysql2'
   gem 'rspec-rails'
   gem 'annotate'
+  gem 'factory_girl_rails'
 end
 
 group :assets do
