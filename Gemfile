@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.8'
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -33,6 +34,7 @@ gem 'therubyracer'
 group :development, :test do
   gem 'mysql2'
   gem 'rspec-rails'
+  gem 'annotate'
 end
 
 group :assets do
